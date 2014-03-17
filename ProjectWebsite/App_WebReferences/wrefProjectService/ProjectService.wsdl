@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.uwm.edu/rtgreuel" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.uwm.edu/rtgreuel" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.uwm.edu/rtgreuel">
+      <s:element name="CheckAlive">
+        <s:complexType />
+      </s:element>
+      <s:element name="CheckAliveResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckAliveResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="addItemToDatabase">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="asin" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="addItemToDatabaseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="addItemToDatabaseResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="removeItemFromDatabase">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="imageURL" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="removeItemFromDatabaseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="removeItemFromDatabaseResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getASIN">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="imageURL" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getASINResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getASINResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getCurrentPrice">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="itemID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getCurrentPriceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getCurrentPriceResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getItemDescription">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="asin" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getItemDescriptionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getItemDescriptionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getLargeImageURL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="asin" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getLargeImageURLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getLargeImageURLResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CheckAliveSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckAlive" />
+  </wsdl:message>
+  <wsdl:message name="CheckAliveSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckAliveResponse" />
+  </wsdl:message>
+  <wsdl:message name="addItemToDatabaseSoapIn">
+    <wsdl:part name="parameters" element="tns:addItemToDatabase" />
+  </wsdl:message>
+  <wsdl:message name="addItemToDatabaseSoapOut">
+    <wsdl:part name="parameters" element="tns:addItemToDatabaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="removeItemFromDatabaseSoapIn">
+    <wsdl:part name="parameters" element="tns:removeItemFromDatabase" />
+  </wsdl:message>
+  <wsdl:message name="removeItemFromDatabaseSoapOut">
+    <wsdl:part name="parameters" element="tns:removeItemFromDatabaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="getASINSoapIn">
+    <wsdl:part name="parameters" element="tns:getASIN" />
+  </wsdl:message>
+  <wsdl:message name="getASINSoapOut">
+    <wsdl:part name="parameters" element="tns:getASINResponse" />
+  </wsdl:message>
+  <wsdl:message name="getCurrentPriceSoapIn">
+    <wsdl:part name="parameters" element="tns:getCurrentPrice" />
+  </wsdl:message>
+  <wsdl:message name="getCurrentPriceSoapOut">
+    <wsdl:part name="parameters" element="tns:getCurrentPriceResponse" />
+  </wsdl:message>
+  <wsdl:message name="getItemDescriptionSoapIn">
+    <wsdl:part name="parameters" element="tns:getItemDescription" />
+  </wsdl:message>
+  <wsdl:message name="getItemDescriptionSoapOut">
+    <wsdl:part name="parameters" element="tns:getItemDescriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="getLargeImageURLSoapIn">
+    <wsdl:part name="parameters" element="tns:getLargeImageURL" />
+  </wsdl:message>
+  <wsdl:message name="getLargeImageURLSoapOut">
+    <wsdl:part name="parameters" element="tns:getLargeImageURLResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ProjectServiceSoap">
+    <wsdl:operation name="CheckAlive">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Check if the service is running.</wsdl:documentation>
+      <wsdl:input message="tns:CheckAliveSoapIn" />
+      <wsdl:output message="tns:CheckAliveSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="addItemToDatabase">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This method takes the Amazon Standard Identification Number (unique number identifying an item) and interacts with the database in the following ways: Inserts a record into User_Item to show the item is added to the watchlist, selects the current price of the item and stores in database if it’s not already stored there, and adds the item to the Item table.</wsdl:documentation>
+      <wsdl:input message="tns:addItemToDatabaseSoapIn" />
+      <wsdl:output message="tns:addItemToDatabaseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="removeItemFromDatabase">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This method removes a specific item from the user’s watchlist (this is done at runtime- the URL of the selected gridview row item is identifying (since it’s unique) and used to key into the Item Table. The corresponding ASIN is taken from the Item table and used to key into the User_Item table to delete the record denoting the item is being watched by the user.</wsdl:documentation>
+      <wsdl:input message="tns:removeItemFromDatabaseSoapIn" />
+      <wsdl:output message="tns:removeItemFromDatabaseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getASIN">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This simple method takes the imageURL of an item and finds its corresponding ASIN number from the Item table.</wsdl:documentation>
+      <wsdl:input message="tns:getASINSoapIn" />
+      <wsdl:output message="tns:getASINSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getCurrentPrice">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This method takes the itemID (ASIN) as input and checks the Amazon API for its current lowest price (including all sellers) and returns the results in the form of a string.</wsdl:documentation>
+      <wsdl:input message="tns:getCurrentPriceSoapIn" />
+      <wsdl:output message="tns:getCurrentPriceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getItemDescription">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This method is a simple method that takes the asin number and retrieves the item’s title (as well as returns it in a way to be displayed as a hyperlink in the gridview) which links to the item’s product page on Amazon.</wsdl:documentation>
+      <wsdl:input message="tns:getItemDescriptionSoapIn" />
+      <wsdl:output message="tns:getItemDescriptionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getLargeImageURL">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This method gets the URL for a big picture of the item. This is used for the item’s “price history” page.</wsdl:documentation>
+      <wsdl:input message="tns:getLargeImageURLSoapIn" />
+      <wsdl:output message="tns:getLargeImageURLSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ProjectServiceSoap" type="tns:ProjectServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CheckAlive">
+      <soap:operation soapAction="http://www.uwm.edu/rtgreuel/CheckAlive" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addItemToDatabase">
+      <soap:operation soapAction="http://www.uwm.edu/rtgreuel/addItemToDatabase" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="removeItemFromDatabase">
+      <soap:operation soapAction="http://www.uwm.edu/rtgreuel/removeItemFromDatabase" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getASIN">
+      <soap:operation soapAction="http://www.uwm.edu/rtgreuel/getASIN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCurrentPrice">
+      <soap:operation soapAction="http://www.uwm.edu/rtgreuel/getCurrentPrice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getItemDescription">
+      <soap:operation soapAction="http://www.uwm.edu/rtgreuel/getItemDescription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLargeImageURL">
+      <soap:operation soapAction="http://www.uwm.edu/rtgreuel/getLargeImageURL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ProjectServiceSoap12" type="tns:ProjectServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CheckAlive">
+      <soap12:operation soapAction="http://www.uwm.edu/rtgreuel/CheckAlive" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addItemToDatabase">
+      <soap12:operation soapAction="http://www.uwm.edu/rtgreuel/addItemToDatabase" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="removeItemFromDatabase">
+      <soap12:operation soapAction="http://www.uwm.edu/rtgreuel/removeItemFromDatabase" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getASIN">
+      <soap12:operation soapAction="http://www.uwm.edu/rtgreuel/getASIN" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCurrentPrice">
+      <soap12:operation soapAction="http://www.uwm.edu/rtgreuel/getCurrentPrice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getItemDescription">
+      <soap12:operation soapAction="http://www.uwm.edu/rtgreuel/getItemDescription" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLargeImageURL">
+      <soap12:operation soapAction="http://www.uwm.edu/rtgreuel/getLargeImageURL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ProjectService">
+    <wsdl:port name="ProjectServiceSoap" binding="tns:ProjectServiceSoap">
+      <soap:address location="http://localhost:49429/ProjectService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ProjectServiceSoap12" binding="tns:ProjectServiceSoap12">
+      <soap12:address location="http://localhost:49429/ProjectService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

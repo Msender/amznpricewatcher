@@ -1,0 +1,43 @@
+﻿
+#header {
+    text-align: center;
+    vertical-align: top;
+    background-color: rgb(19,104,168);
+    font-family: Arial;
+    font-size:large;
+    color: white;
+}
+
+#nav {
+    text-align:center;
+    font-size: larger;
+    background-color: #33b5e5;
+    font-weight: bold;
+    text-decoration: solid;
+}
+
+#body {
+    border: solid;
+    border-color: rgb(19,104,168);
+    padding: 7px;
+}
+
+#nav a {
+    text-decoration: none;
+}
+
+#nav a:hover {
+    color: white;
+    }
+
+a {
+    text-align: center;
+}
+
+#body a:hover {
+    color: black;
+}
+
+tr {
+  vertical-align: top;
+}

@@ -1,0 +1,10 @@
+C:\Users\Ryan\Dropbox\School Stuff\Fall 2013\BUS ADM 531\AmazonTest\Solution1\CAmazonAddons\obj\Debug\CAmazonAddons.csprojResolveAssemblyReference.cache
+C:\Users\Ryan\Dropbox\School Stuff\Fall 2013\BUS ADM 531\AmazonTest\Solution1\CAmazonAddons\bin\Debug\CAmazonAddons.dll
+C:\Users\Ryan\Dropbox\School Stuff\Fall 2013\BUS ADM 531\AmazonTest\Solution1\CAmazonAddons\bin\Debug\CAmazonAddons.pdb
+C:\Users\Ryan\Dropbox\School Stuff\Fall 2013\BUS ADM 531\AmazonTest\Solution1\CAmazonAddons\obj\Debug\CAmazonAddons.dll
+C:\Users\Ryan\Dropbox\School Stuff\Fall 2013\BUS ADM 531\AmazonTest\Solution1\CAmazonAddons\obj\Debug\CAmazonAddons.pdb
+C:\Users\Ryan\Dropbox\School Stuff\Fall 2013\BUS ADM 531\Project\ProjectSolution\CAmazonAddons\bin\Debug\CAmazonAddons.dll
+C:\Users\Ryan\Dropbox\School Stuff\Fall 2013\BUS ADM 531\Project\ProjectSolution\CAmazonAddons\bin\Debug\CAmazonAddons.pdb
+C:\Users\Ryan\Dropbox\School Stuff\Fall 2013\BUS ADM 531\Project\ProjectSolution\CAmazonAddons\obj\Debug\CAmazonAddons.csprojResolveAssemblyReference.cache
+C:\Users\Ryan\Dropbox\School Stuff\Fall 2013\BUS ADM 531\Project\ProjectSolution\CAmazonAddons\obj\Debug\CAmazonAddons.dll
+C:\Users\Ryan\Dropbox\School Stuff\Fall 2013\BUS ADM 531\Project\ProjectSolution\CAmazonAddons\obj\Debug\CAmazonAddons.pdb
