@@ -1,9 +1,0 @@
-C:\Users\Ryan\Dropbox\School Stuff\Fall 2013\BUS ADM 531\Project\ProjectSolution\PriceChecker\bin\Debug\PriceChecker.exe.config
-C:\Users\Ryan\Dropbox\School Stuff\Fall 2013\BUS ADM 531\Project\ProjectSolution\PriceChecker\obj\Debug\PriceChecker.csprojResolveAssemblyReference.cache
-C:\Users\Ryan\Dropbox\School Stuff\Fall 2013\BUS ADM 531\Project\ProjectSolution\PriceChecker\bin\Debug\PriceChecker.exe
-C:\Users\Ryan\Dropbox\School Stuff\Fall 2013\BUS ADM 531\Project\ProjectSolution\PriceChecker\bin\Debug\PriceChecker.pdb
-C:\Users\Ryan\Dropbox\School Stuff\Fall 2013\BUS ADM 531\Project\ProjectSolution\PriceChecker\obj\Debug\PriceChecker.exe
-C:\Users\Ryan\Dropbox\School Stuff\Fall 2013\BUS ADM 531\Project\ProjectSolution\PriceChecker\obj\Debug\PriceChecker.pdb
-C:\Users\Ryan\dev\amznpricewatcher\ProjectSolution\PriceChecker\bin\Debug\PriceChecker.exe.config
-C:\Users\Ryan\dev\amznpricewatcher\ProjectSolution\PriceChecker\obj\Debug\PriceChecker.exe
-C:\Users\Ryan\dev\amznpricewatcher\ProjectSolution\PriceChecker\obj\Debug\PriceChecker.pdb
